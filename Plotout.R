@@ -9,7 +9,4 @@ rm(list=ls())
 WD<- getwd() 
 setwd(WD)     
 repfile <- SS_output(dir=WD)
-
-SS_tune_comps(repfile, option = "MI")
-
 SS_plots(repfile)

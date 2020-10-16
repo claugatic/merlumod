@@ -18,7 +18,7 @@
 #_catch_se:  standard error of log(catch); can be overridden in control file with detailed F input																																						
 #_need_catch_mult: 0 = none, 1 = apply catch multiplier as parameter specified in the control file at the end of the growth parameters 																																						
 #_rows are fleets; columns are: fleet_type, timing, area, units, need_catch_mult																																						
-1	0.2	1	1	0.01	FISHERY1 #	#-1 indica ocurre durante todo el periodo																																
+1	-1	1	1	0.01	FISHERY1 #	#-1 indica ocurre durante todo el periodo																																
 3	0.5	1	2	0.03	SURVEY1	 #	1																															
 #Cond - bycatch fleet																																						
 #a:  fleet index																																						
