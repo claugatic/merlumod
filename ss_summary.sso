@@ -3,7 +3,7 @@
 #Foreign copyrights may apply. See copyright.txt for more information.
 mcomun20.dat #_DataFile 
 controlR.dat #_Control 
-Run_Date: Fri Oct 16 19:37:56 2020
+Run_Date: Sun Oct 18 10:26:26 2020
 #_LIKELIHOOD 
 Label logL*Lambda
 TOTAL_LogL 148.343

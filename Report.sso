@@ -4,8 +4,8 @@
 #_user_support_available_at:NMFS.Stock.Synthesis@noaa.gov
 #_user_info_available_at:https://vlab.ncep.noaa.gov/group/stock-synthesis
 
-StartTime: Fri Oct 16 19:37:56 2020
-EndTime: Fri Oct 16 19:38:12 2020
+StartTime: Sun Oct 18 10:26:26 2020
+EndTime: Sun Oct 18 10:26:42 2020
 This run took: 0 hours, 0 minutes, 16 seconds.
 Data_File: mcomun20.dat
 Control_File: controlR.dat
