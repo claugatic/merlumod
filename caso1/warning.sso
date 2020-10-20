@@ -1,7 +1,8 @@
 #V3.30.11.00-safe;_2018_04_11;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_11.6
 #This is a work of the U.S. Government and is not subject to copyright protection in the United States.
 #Foreign copyrights may apply. See copyright.txt for more information.
-Sun Oct 18 19:38:44 2020
+Mon Oct 19 20:37:53 2020
 
- N warnings: 0
+ parameter init value is less than parameter min 0.05 < 0.1 for parm: 1
+ N warnings: 1
 Number_of_active_parameters_on_or_near_bounds: 1
