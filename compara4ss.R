@@ -11,23 +11,24 @@ setwd(WD)
 
 
 # directories where models were run need to be defined
-base <- 'c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/base/'
+
 caso1 <- 'c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/caso1/'
 caso2 <- 'c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/caso2/'
 caso3 <- 'c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/caso3/'
 caso4 <- 'c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/caso4/'
+caso5 <- 'c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/base/'
 dc='c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/compara/'
 
 # read two models
-mod <- SS_output(dir=base)
 mod1 <- SS_output(dir=caso1)
 mod2 <- SS_output(dir=caso2)
 mod3 <- SS_output(dir=caso3)
 mod4 <- SS_output(dir=caso4)
+mod5 <- SS_output(dir=caso5)
 
 
 # create list summarizing model results
-mod.sum <- SSsummarize(list(mod, mod1,mod2,mod3,mod4))
+mod.sum <- SSsummarize(list(mod4,mod5))
 
 # Tablas de likelihood
 SStableComparisons(mod.sum)
