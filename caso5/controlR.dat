@@ -58,7 +58,7 @@
 2 #_First_Mature_Age
 2 #_fecundity option:(1)eggs=Wt*(a+b*Wt);(2)eggs=a*L^b;(3)eggs=a*Wt^b; (4)eggs=a+b*L; (5)eggs=a+b*W
 0 #_hermaphroditism option:  0=none; 1=female-to-male age-specific fxn; -1=male-to-female age-specific fxn
-1 #_parameter_offset_approach (1=none, 2= M, G, CV_G as offset from female-GP1, 3=like SS2 V1.x)
+2 #_parameter_offset_approach (1=none, 2= M, G, CV_G as offset from female-GP1, 3=like SS2 V1.x)
 #
 #_growth_parms
 #_ LO HI INIT PRIOR PR_SD PR_type PHASE env_var&link dev_link dev_minyr dev_maxyr dev_PH Block Block_Fxn
@@ -152,13 +152,14 @@
 #_   fleet      link link_info  extra_se   biasadj     float  #  fleetname
          1         1         0         0         0         0  #  FISHERY1
          2         1         0         0         0         0  #  SURVEY1
-         3         1         0         0         0         0  #  Depletion																		  
+#        3         1         0         0         0         0  #  Depletion																		  
 -9999 0 0 0 0 0
 #
 #_Q_parms(if_any);Qunits_are_ln(q)
 #_          LO            HI          INIT         PRIOR         PR_SD       PR_type      PHASE    env-var    use_dev   dev_mnyr   dev_mxyr     dev_PH      Block    Blk_Fxn  #  parm_name
            -15            15      -10.4929             0             1             0          3          0          0          0          0          0          0          0  #  LnQ_base_FISHERY1(1)
            -15            15      0.893645             0             1             0          3          0          0          0          0          0          0          0  #  LnQ_base_SURVEY1(2)
+ #          -7             5             0             0             1             0         -1          0          0          0          0          0          0          0  #  LnQ_base_Depletion(4)
 #_no timevary Q parameters
 #
 #_size_selex_patterns
@@ -179,7 +180,7 @@
 #Pattern:_42; parm=2+special+3; // like 27, with 2 additional param for scaling (average over bin range)
 #_discard_options:_0=none;_1=define_retention;_2=retention&mortality;_3=all_discarded_dead;_4=define_dome-shaped_retention
 #_Pattern Discard Male Special
- 0 0 0 0 # 1 FISHERY1
+ 1 2 0 0 # 1 FISHERY1 1 2
  0 0 0 0 # 2 SURVEY1
  0 0 0 0 # 4 Depletion						   
 #
@@ -210,11 +211,20 @@
           0.01             5       3.54659           1.8            99             0          2          0          0          0          0        0.5          2          2  #  AgeSel_P2_FISHERY1(1)
           0.01             5       1.47274           0.2            99             0          2          0          0          0          0        0.5          0          0  #  AgeSel_P1_SURVEY1(2)
           0.01             5       0.11742           1.5            99             0          2          0          0          0          0        0.5          0          0  #  AgeSel_P2_SURVEY1(2)
+
+#          20	7          0	   40	             40	            99	           0	      -3	     0	        0	       0 	      0  	   0	        1	       0	#_inflection_for_retention	
+0.1	10	1	1	99	0	-3	0	0	0	0	0	1	0	#_slope_for_retention	
+0.001	1	0.92	1	99	0	-3	0	0	0	0	0	1	0	#_asymptotic_retention 	
 20	70	40	40	99	0	-3	0	0	0	0	0	1	0	#_inflection_for_retention	
 0.1	10	1	1	99	0	-3	0	0	0	0	0	1	0	#_slope_for_retention	
 0.001	1	0.92	1	99	0	-3	0	0	0	0	0	1	0	#_asymptotic_retention 	
--10	10	0	0	99	0	-3	0	0	0	0	0	1	0	#_male_offset_on_inflection	
-#_no timevary selex parameters
+
+0.1	10	1	1	99	0	-3	0	0	0	0	0	2	0	#_slope_for_retention	
+0.001	1	0.92	1	99	0	-3	0	0	0	0	0	2	0	#_asymptotic_retention 	
+20	70	40	40	99	0	-3	0	0	0	0	0	2	0	#_inflection_for_retention	
+0.1	10	1	1	99	0	-3	0	0	0	0	0	2	0	#_slope_for_retention	
+0.001	1	0.92	1	99	0	-3	0	0	0	0	0	2	0	#_asymptotic_retention 	
+
 #
 0   #  use 2D_AR1 selectivity(0/1):  experimental feature
 #_no 2D_AR1 selex offset used

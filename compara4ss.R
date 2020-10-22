@@ -16,7 +16,9 @@ caso1 <- 'c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/caso1/'
 caso2 <- 'c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/caso2/'
 caso3 <- 'c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/caso3/'
 caso4 <- 'c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/caso4/'
-caso5 <- 'c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/base/'
+caso5 <- 'c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/caso5/'
+caso6 <- 'c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/caso6/'
+caso7 <- 'c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/base/'
 dc='c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/compara/'
 
 # read two models
@@ -25,10 +27,13 @@ mod2 <- SS_output(dir=caso2)
 mod3 <- SS_output(dir=caso3)
 mod4 <- SS_output(dir=caso4)
 mod5 <- SS_output(dir=caso5)
+mod6 <- SS_output(dir=caso6)
+mod7 <- SS_output(dir=caso7)
+
 
 
 # create list summarizing model results
-mod.sum <- SSsummarize(list(mod4,mod5))
+mod.sum <- SSsummarize(list(mod5,mod6))
 
 # Tablas de likelihood
 SStableComparisons(mod.sum)
