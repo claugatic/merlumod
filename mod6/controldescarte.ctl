@@ -56,8 +56,8 @@
 #_ LO HI INIT PRIOR PR_SD PR_type PHASE env_var&link dev_link dev_minyr dev_maxyr dev_PH Block Block_Fxn
  0.1 0.35 0.1 0.3 0.2 -3 2 0 0 0 0 0 0 0 # NatM_p_1_Fem_GP_1
  20 25 30 30 5 0 -2 0 0 0 0 0 0 0 # L_at_Amin_Fem_GP_1
- 30 35 37 37 5 0 -4 0 0 0 0 0 0 0 # L_at_Amax_Fem_GP_1
- 0.2 0.3 0.28 0.25 0.8 0 -4 0 0 0 0 0 0 0 # VonBert_K_Fem_GP_1
+ 60 75 65 65 5 0 3 0 0 0 0 0 0 0 # L_at_Amax_Fem_GP_1
+ 0.1 0.2 0.15 0.25 0.8 0 3 0 0 0 0 0 0 0 # VonBert_K_Fem_GP_1-4
  0.05 0.2 0.063 0.1 0.8 0 -3 0 0 0 0 0 0 0 # CV_young_Fem_GP_1
  0.05 0.2 0.085 0.1 0.8 0 -3 0 0 0 0 0 0 0 # CV_old_Fem_GP_1
  0.15 0.25 0.17 0.19 0.5 0 -3 0 0 0 0 0 0 0 # Wtlen_1_Fem_GP_1

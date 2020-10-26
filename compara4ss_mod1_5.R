@@ -32,7 +32,7 @@ mod5 <- SS_output(dir=mod5)
 mod8 <- SS_output(dir=mod8)
 
 # create list summarizing model results
-mod.sum <- SSsummarize(list(mod1,mod8))#,mod2,mod3,mod4,mod5
+mod.sum <- SSsummarize(list(mod1,mod2,mod3,mod4,mod5,mod8))#,
 
 # Tablas de likelihood
 SStableComparisons(mod.sum)

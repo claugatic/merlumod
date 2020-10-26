@@ -83,29 +83,29 @@
 0  # 0/1 to use steepness in initial equ recruitment calculation
 0  #  future feature:  0/1 to make realized sigmaR a function of SR curvature
 #_          LO            HI          INIT         PRIOR         PR_SD       PR_type      PHASE    env-var    use_dev   dev_mnyr   dev_mxyr     dev_PH      Block    Blk_Fxn #  parm_name
-             3            31        14.414          10.3            10             0          1          0          0          0          0          0          0          0 # SR_LN(R0)
-           0.2             1      0.700305           0.7          0.05             1          4          0          0          0          0          0          0          0 # SR_BH_steep
+             3            31       14.1392          10.3            10             0          1          0          0          0          0          0          0          0 # SR_LN(R0)
+           0.2             1      0.823574           0.7          0.05             1          4          0          0          0          0          0          0          0 # SR_BH_steep
              0             2           0.6           0.8           0.8             0         -4          0          0          0          0          0          0          0 # SR_sigmaR
             -5             5             0             0             1             0         -4          0          0          0          0          0          0          0 # SR_regime
              0             0             0             0             0             0        -99          0          0          0          0          0          0          0 # SR_autocorr
-1 #do_recdev:  0=none; 1=devvector; 2=simple deviations
-1992 # first year of main recr_devs; early devs can preceed this era
-2015 # last year of main recr_devs; forecast devs start in following year
+2 #do_recdev:  0=none; 1=devvector; 2=simple deviations
+1988 # first year of main recr_devs; early devs can preceed this era
+2020 # last year of main recr_devs; forecast devs start in following year
 2 #_recdev phase 
-1 # (0/1) to read 13 advanced options
- 0 #_recdev_early_start (0=none; neg value makes relative to recdev_start)
- -4 #_recdev_early_phase
- 0 #_forecast_recruitment phase (incl. late recr) (0 value resets to maxphase+1)
- 1 #_lambda for Fcast_recr_like occurring before endyr+1
- 1900 #_last_yr_nobias_adj_in_MPD; begin of ramp
- 1900 #_first_yr_fullbias_adj_in_MPD; begin of plateau
- 2001 #_last_yr_fullbias_adj_in_MPD
- 2002 #_end_yr_for_ramp_in_MPD (can be in forecast to shape ramp, but SS sets bias_adj to 0.0 for fcast yrs)
- 1 #_max_bias_adj_in_MPD (-1 to override ramp and set biasadj=1.0 for all estimated recdevs)
- 0 #_period of cycles in recruitment (N parms read below)
- -5 #min rec_dev
- 5 #max rec_dev
- 0 #_read_recdevs
+0 # (0/1) to read 13 advanced options
+#_Cond 0 #_recdev_early_start (0=none; neg value makes relative to recdev_start)
+#_Cond -4 #_recdev_early_phase
+#_Cond 0 #_forecast_recruitment phase (incl. late recr) (0 value resets to maxphase+1)
+#_Cond 1 #_lambda for Fcast_recr_like occurring before endyr+1
+#_Cond 992 #_last_yr_nobias_adj_in_MPD; begin of ramp
+#_Cond 1980 #_first_yr_fullbias_adj_in_MPD; begin of plateau
+#_Cond 2020 #_last_yr_fullbias_adj_in_MPD
+#_Cond 2021 #_end_yr_for_ramp_in_MPD (can be in forecast to shape ramp, but SS sets bias_adj to 0.0 for fcast yrs)
+#_Cond 1 #_max_bias_adj_in_MPD (-1 to override ramp and set biasadj=1.0 for all estimated recdevs)
+#_Cond 0 #_period of cycles in recruitment (N parms read below)
+#_Cond -5 #min rec_dev
+#_Cond 5 #max rec_dev
+#_Cond 0 #_read_recdevs
 #_end of advanced SR options
 #
 #_placeholder for full parameter lines for recruitment cycles
@@ -113,8 +113,8 @@
 #_Yr Input_value
 #
 # all recruitment deviations
-#  1992R 1993R 1994R 1995R 1996R 1997R 1998R 1999R 2000R 2001R 2002R 2003R 2004R 2005R 2006R 2007R 2008R 2009R 2010R 2011R 2012R 2013R 2014R 2015R 2016F 2017F 2018F 2019F 2020F 2021F 2022F 2023F 2024F 2025F 2026F 2027F 2028F 2029F 2030F 2031F 2032F 2033F 2034F 2035F
-#  0.574646 0.636597 0.531612 0.124193 0.132654 -0.0359101 0.106257 -0.215817 -0.343534 -0.119456 -0.038383 0.2824 0.487661 0.332055 0.394916 -0.0648209 -0.125216 -0.409411 -0.532424 -0.613684 -0.37152 -0.332107 0.041459 -0.442168 0.102275 -0.156924 -0.161194 -0.0239109 -0.00607543 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+#  1988R 1989R 1990R 1991R 1992R 1993R 1994R 1995R 1996R 1997R 1998R 1999R 2000R 2001R 2002R 2003R 2004R 2005R 2006R 2007R 2008R 2009R 2010R 2011R 2012R 2013R 2014R 2015R 2016R 2017R 2018R 2019R 2020R 2021F 2022F 2023F 2024F 2025F 2026F 2027F 2028F 2029F 2030F 2031F 2032F 2033F 2034F 2035F
+#  0.13671 0.322297 0.674906 0.847479 0.833493 0.695388 0.579956 0.165274 0.138415 -0.0515861 0.060026 -0.282564 -0.455306 -0.283081 -0.0698451 0.227852 0.431595 0.304203 0.378078 -0.0682131 -0.154079 -0.235795 -0.335357 -0.440268 -0.254151 -0.200355 0.185174 -0.21943 -0.0990537 -0.322791 -0.237245 -0.0366218 -0.00855427 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 # implementation error by year in forecast:  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 #
 #Fishing Mortality info 
@@ -133,7 +133,7 @@
 # F rates by fleet
 # Yr:  1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035
 # seas:  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-# pesqueria 0.0992199 0.101846 0.124172 0.125248 0.137615 0.11773 0.117027 0.160814 0.208627 0.301181 0.45155 0.82911 0.934226 0.891343 0.914165 0.662787 0.622442 0.571914 0.678106 0.718757 0.489431 0.618469 0.277703 0.194132 0.167243 0.142937 0.110266 0.107318 0.152022 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+# pesqueria 0.13423 0.136746 0.154661 0.141157 0.146506 0.12279 0.121849 0.16726 0.21679 0.3107 0.465863 0.833259 0.938927 0.898733 0.92287 0.667465 0.623819 0.571218 0.675449 0.715457 0.488611 0.623503 0.282697 0.198199 0.171081 0.146104 0.111924 0.107303 0.148056 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 #
 #_Q_setup for fleets with cpue or survey data
 #_1:  link type: (1=simple q, 1 parm; 2=mirror simple q, 1 mirrored parm; 3=q and power, 2 parm)
@@ -148,8 +148,8 @@
 #
 #_Q_parms(if_any);Qunits_are_ln(q)
 #_          LO            HI          INIT         PRIOR         PR_SD       PR_type      PHASE    env-var    use_dev   dev_mnyr   dev_mxyr     dev_PH      Block    Blk_Fxn  #  parm_name
-           -15            15      -10.3624             0             1             0          3          0          0          0          0          0          0          0  #  LnQ_base_pesqueria(1)
-           -15            15       0.38223             0             1             0          3          0          0          0          0          0          0          0  #  LnQ_base_crucero(2)
+           -15            15      -10.3505             0             1             0          3          0          0          0          0          0          0          0  #  LnQ_base_pesqueria(1)
+           -15            15      0.394166             0             1             0          3          0          0          0          0          0          0          0  #  LnQ_base_crucero(2)
 #_no timevary Q parameters
 #
 #_size_selex_patterns
@@ -195,14 +195,14 @@
  12 0 0 0 # 2 crucero
 #
 #_          LO            HI          INIT         PRIOR         PR_SD       PR_type      PHASE    env-var    use_dev   dev_mnyr   dev_mxyr     dev_PH      Block    Blk_Fxn  #  parm_name
-          0.01             5       3.14261           0.2            99             0          2          0          0          0          0        0.5          1          1  #  AgeSel_P1_pesqueria(1)
-          0.01             5       1.44085           1.8            99             0          2          0          0          0          0        0.5          2          2  #  AgeSel_P2_pesqueria(1)
-          0.01             5        1.8067           0.2            99             0          2          0          0          0          0        0.5          0          0  #  AgeSel_P1_crucero(2)
-          0.01             5      0.254204           1.5            99             0          2          0          0          0          0        0.5          0          0  #  AgeSel_P2_crucero(2)
+          0.01             5       3.15189           0.2            99             0          2          0          0          0          0        0.5          1          1  #  AgeSel_P1_pesqueria(1)
+          0.01             5       1.47801           1.8            99             0          2          0          0          0          0        0.5          2          2  #  AgeSel_P2_pesqueria(1)
+          0.01             5        1.8199           0.2            99             0          2          0          0          0          0        0.5          0          0  #  AgeSel_P1_crucero(2)
+          0.01             5       0.26709           1.5            99             0          2          0          0          0          0        0.5          0          0  #  AgeSel_P2_crucero(2)
 # timevary selex parameters 
 #_          LO            HI          INIT         PRIOR         PR_SD       PR_type    PHASE  #  parm_name
-      -3.06633       1.92367      0.484147             0      0.961835             6      4  # AgeSel_P1_pesqueria(1)_BLK1add_1992
-          0.01             5       1.28702           1.8            99             0      2  # AgeSel_P2_pesqueria(1)_BLK2repl_2003
+      -3.06633       1.92367      0.579473             0      0.961835             6      4  # AgeSel_P1_pesqueria(1)_BLK1add_1992
+          0.01             5       1.28755           1.8            99             0      2  # AgeSel_P2_pesqueria(1)_BLK2repl_2003
 # info on dev vectors created for selex parms are reported with other devs after tag parameter section 
 #
 0   #  use 2D_AR1 selectivity(0/1):  experimental feature

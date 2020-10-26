@@ -19,7 +19,7 @@ mod4 <- 'c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/mod4/'#mod4
 mod5 <- 'c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/mod5/'#mod5
 mod6 <- 'c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/mod6/'#mod6
 mod7 <- 'c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/mod7/'#mod7
-mod7 <- 'c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/mod8/'#mod7
+mod8 <- 'c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/mod8/'#mod7
 dc='c:/CEGM/ACTIVIDADES 2020/SS3uw/materialcurso/merlumod/compara6_7/'
 
 # read two models
