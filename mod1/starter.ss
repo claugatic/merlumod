@@ -6,6 +6,8 @@
 #C starter comment here
 mcomun20flota.dat
 controlflota.dat
+#mcomun20.dat
+#control.dat
 0 # 0=use init values in control file; 1=use ss.par
 1 # run display detail (0,1,2)
 1 # detailed output (0=minimal for data-limited, 1=high, 2=brief) 

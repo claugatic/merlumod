@@ -19,7 +19,7 @@
 0 # Forecast selectivity (0=fcast selex is mean from year range; 1=fcast selectivity from annual time-vary parms)
 2 # Control rule method (1=catch=f(SSB) west coast; 2=F=f(SSB) ) 
 0.4 # Control rule Biomass level for constant F (as frac of Bzero, e.g. 0.40); (Must be > the no F level below) 
-0.25 # Control rule Biomass level for no F (as frac of Bzero, e.g. 0.10) 
+0.2 # Control rule Biomass level for no F (as frac of Bzero, e.g. 0.10) 
 0.75 # Control rule target as fraction of Flimit (e.g. 0.75) 
 3 #_N forecast loops (1=OFL only; 2=ABC; 3=get F from forecast ABC catch with allocations applied)
 3 #_First forecast loop with stochastic recruitment
@@ -36,8 +36,8 @@
 2 # basis for fcast catch tuning and for fcast catch caps and allocation  (2=deadbio; 3=retainbio; 5=deadnum; 6=retainnum)
 # Conditional input if relative F choice = 2
 # enter list of:  season,  fleet, relF; if used, terminate with season=-9999
-# 1 1 0.590893
-# 1 2 0.409107
+# 1 1 0.586767
+# 1 2 0.413233
 # enter list of: fleet number, max annual catch for fleets with a max; terminate with fleet=-9999
 -9999 -1
 # enter list of area ID and max annual catch; terminate with area=-9999
