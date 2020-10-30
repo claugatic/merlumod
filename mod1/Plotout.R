@@ -9,4 +9,12 @@ rm(list=ls())
 WD<- getwd() 
 setwd(WD)     
 repfile <- SS_output(dir=WD)
+
+
+SS_tune_comps(repfile, fleets = "all", option = "Francis",
+digits = 6, write = TRUE)
+
 SS_plots(repfile)
+
+SS_plots(tmp, uncertainty=T,datplot = T, png=T, aalresids = T,btarg=0.4,
+         minbthresh=0.2,  forecast=T)
