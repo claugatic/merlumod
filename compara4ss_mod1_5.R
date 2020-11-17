@@ -34,6 +34,29 @@ mod8 <- SS_output(dir=mod8)
 # create list summarizing model results
 mod.sum <- SSsummarize(list(mod1))#,mod2,mod3,mod4,mod5,mod8
 
+SSplotRecdevs(mod1, subplots = 1:3, plot = TRUE, print = TRUE,
+add = FALSE, uncertainty = TRUE, minyr = -Inf, maxyr = Inf,
+forecastplot = FALSE, col1 = "black", col2 = "blue",
+col3 = "green3", col4 = "red", legendloc = "topleft",
+labels = c("Year", "Asymptotic standard error estimate",
+"Log recruitment deviation",
+"Bias adjustment fraction, 1 - stddev^2 / sigmaR^2"), pwidth = 6.5,
+pheight = 5, punits = "in", res = 300, ptsize = 10,
+cex.main = 1, plotdir = dc, verbose = TRUE)
+
+#
+#SSplotPars(mod1, xlab = "Parameter value", ylab = "Density",
+#showmle = TRUE, showpost = TRUE, showprior = TRUE,
+#showinit = TRUE, showdev = FALSE, showlegend = TRUE,
+#fitrange = FALSE, xaxs = "i", xlim = NULL, ylim = NULL,
+#verbose = TRUE, nrows = 3, ncols = 3, ltyvec = c(1, 1, 3, 4),
+#colvec = c("blue", "red", "black", "gray60", rgb(0, 0, 0, 0.5)),
+#new = TRUE, add = FALSE, pdf = FALSE, pwidth = 6.5,
+#pheight = 5, punits = "in", ptsize = 10, returntable = FALSE,
+#strings = c(), exact = FALSE, newheaders = NULL)
+
+
+
 # Tablas de likelihood
 SStableComparisons(mod.sum)
 
