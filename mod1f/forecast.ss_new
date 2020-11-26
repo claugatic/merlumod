@@ -48,9 +48,69 @@
 # list sequentially because read values fill to end of N forecast
 # terminate with -9999 in year field 
 # no allocation groups
-2 # basis for input Fcast catch: -1=read basis with each obs; 2=dead catch; 3=retained catch; 99=input Hrate(F)
+99 # basis for input Fcast catch: -1=read basis with each obs; 2=dead catch; 3=retained catch; 99=input Hrate(F)
 #enter list of Fcast catches; terminate with line having year=-9999
 #_Yr Seas Fleet Catch(or_F)
+ 2021 1 1 0.5
+ 2022 1 1 0.5
+ 2023 1 1 0.5
+ 2024 1 1 0.5
+ 2025 1 1 0.5
+ 2026 1 1 0.5
+ 2027 1 1 0.5
+ 2028 1 1 0.5
+ 2029 1 1 0.5
+ 2030 1 1 0.5
+ 2031 1 1 0.5
+ 2032 1 1 0.5
+ 2033 1 1 0.5
+ 2034 1 1 0.5
+ 2035 1 1 0.5
+ 2036 1 1 0.5
+ 2037 1 1 0.5
+ 2038 1 1 0.5
+ 2039 1 1 0.5
+ 2040 1 1 0.5
+ 2041 1 1 0.5
+ 2042 1 1 0.5
+ 2043 1 1 0.5
+ 2044 1 1 0.5
+ 2045 1 1 0.5
+ 2046 1 1 0.5
+ 2047 1 1 0.5
+ 2048 1 1 0.5
+ 2049 1 1 0.5
+ 2050 1 1 0.5
+ 2021 1 2 0.3
+ 2022 1 2 0.3
+ 2023 1 2 0.3
+ 2024 1 2 0.3
+ 2025 1 2 0.3
+ 2026 1 2 0.3
+ 2027 1 2 0.3
+ 2028 1 2 0.3
+ 2029 1 2 0.3
+ 2030 1 2 0.3
+ 2031 1 2 0.3
+ 2032 1 2 0.3
+ 2033 1 2 0.3
+ 2034 1 2 0.3
+ 2035 1 2 0.3
+ 2036 1 2 0.3
+ 2037 1 2 0.3
+ 2038 1 2 0.3
+ 2039 1 2 0.3
+ 2040 1 2 0.3
+ 2041 1 2 0.3
+ 2042 1 2 0.3
+ 2043 1 2 0.3
+ 2044 1 2 0.3
+ 2045 1 2 0.3
+ 2046 1 2 0.3
+ 2047 1 2 0.3
+ 2048 1 2 0.3
+ 2049 1 2 0.3
+ 2050 1 2 0.3
 -9999 1 1 0 
 #
 999 # verify end of input 

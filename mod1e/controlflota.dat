@@ -213,12 +213,18 @@
  12 0 0 0 # 1 FISHERY2
 #
 #_          LO            HI          INIT         PRIOR         PR_SD       PR_type      PHASE    env-var    use_dev   dev_mnyr   dev_mxyr     dev_PH      Block    Blk_Fxn  #  parm_name
-          0.01             5       3.07633           0.2            99             0          2          0          0          0          0        0.5          1          1  #  AgeSel_P1_FISHERY1(1)
-          0.01             5       3.54659           1.8            99             0          2          0          0          0          0        0.5          2          2  #  AgeSel_P2_FISHERY1(1)
-          0.01             5       3.07633           0.2            99             0          2          0          0          0          0        0.5          1          1  #  AgeSel_P1_FISHERY2(1)
-          0.01             5       3.54659           1.8            99             0          2          0          0          0          0        0.5          2          2  #  AgeSel_P2_FISHERY2(1)
-          0.01             5       1.47274           0.2            99             0          2          0          0          0          0        0.5          0          0  #  AgeSel_P1_SURVEY1(2)
-          0.01             5       0.11742           1.5            99             0          2          0          0          0          0        0.5          0          0  #  AgeSel_P2_SURVEY1(2)
+ #         0.01             5       3.07633           0.2            99             0          2          0          0          0          0        0.5          1          1  #  AgeSel_P1_FISHERY1(1)
+  #        0.01             5       3.54659           1.8            99             0          2          0          0          0          0        0.5          2          2  #  AgeSel_P2_FISHERY1(1)
+   #       0.01             5       3.07633           0.2            99             0          2          0          0          0          0        0.5          1          1  #  AgeSel_P1_FISHERY2(1)
+    #      0.01             5       3.54659           1.8            99             0          2          0          0          0          0        0.5          2          2  #  AgeSel_P2_FISHERY2(1)
+     #     0.01             5       1.47274           0.2            99             0          2          0          0          0          0        0.5          0          0  #  AgeSel_P1_SURVEY1(2)
+      #    0.01             5       0.11742           1.5            99             0          2          0          0          0          0        0.5          0          0  #  AgeSel_P2_SURVEY1(2)
+          0.01             5       3.07633           0.2            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_Pa1_FISHERY1
+          0.01             5       3.54659           1.8            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_Pa2_FISHERY1
+          0.01             5       3.07633           0.2            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_Pa1_FISHERY2
+          0.01             5       3.54659           1.8            99             0          2          0          0          0          0        0.5          2          0  #  AgeSel_Pa2_FISHERY2
+          0.01             5       1.47274           0.2            99             0          2          0          0          0          0        0.5          0          0  #  AgeSel_Pa1_SURVEY1(2)
+          0.01             5       0.11742           1.5            99             0          2          0          0          0          0        0.5          0          0  #  AgeSel_Pa2_SURVEY1(2)
 #_no timevary selex parameters
 #
 0   #  use 2D_AR1 selectivity(0/1):  experimental feature
